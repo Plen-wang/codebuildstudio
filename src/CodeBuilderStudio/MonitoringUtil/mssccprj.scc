@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[MonitoringUtil.csproj]
+SCC_Aux_Path = "\\pc05\VSSDB"
+SCC_Project_Name = "$/FastExpress.CodeBuilderStudio/CodeBuilderStudio/MonitoringUtil", OFABAAAA

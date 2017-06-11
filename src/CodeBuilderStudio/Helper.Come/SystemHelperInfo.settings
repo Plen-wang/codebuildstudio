@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Helper.Come" GeneratedClassName="SystemHelperInfo">
+  <Profiles />
+  <Settings>
+    <Setting Name="CurrentDayTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">System.CurrentDayTime</Value>
+    </Setting>
+    <Setting Name="DefaultNameSpace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">System.DefaultNameSpace</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

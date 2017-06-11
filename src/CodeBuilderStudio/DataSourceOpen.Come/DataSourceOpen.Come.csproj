@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41A7125E-77E1-42AD-B5D6-52399DAE4973}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataSourceOpen.Come</RootNamespace>
+    <AssemblyName>DataSourceOpen.Come</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/DataSourceOpen.Come/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\CodeBuilderStudio.Main\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\CodeBuilderStudio.Main\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>GlobalizationRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\Using\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.1.24483, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Using\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AllProjectAttribute.cs">
+      <Link>Properties\AllProjectAttribute.cs</Link>
+    </Compile>
+    <Compile Include="CenterConfig.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>CenterConfig.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Command\DataSourceCommand.cs" />
+    <Compile Include="Command\OracleCommand\DataSourceCommand.cs" />
+    <Compile Include="FrmLoginDataSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginDataSource.Designer.cs">
+      <DependentUpon>FrmLoginDataSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLookUpTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLookUpTable.Designer.cs">
+      <DependentUpon>FrmLookUpTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OracleDataSource\FrmOracleTableColumnInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OracleDataSource\FrmOracleTableColumnInfo.Designer.cs">
+      <DependentUpon>FrmOracleTableColumnInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableColumnInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableColumnInfo.Designer.cs">
+      <DependentUpon>FrmTableColumnInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableViewContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableViewContainer.Designer.cs">
+      <DependentUpon>FrmTableViewContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginLog.Designer.cs">
+      <DependentUpon>LoginLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\M_Column.cs" />
+    <Compile Include="Command\PrintTableView.cs" />
+    <Compile Include="OracleDataSource\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OracleDataSource\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OracleDataSource\OracleSetring.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>OracleSetring.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ControlContent.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTableView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlTableView.Designer.cs">
+      <DependentUpon>ControlTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuilderSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuilderSelect.Designer.cs">
+      <DependentUpon>FrmBuilderSelect.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmLoginDataSource.resx">
+      <DependentUpon>FrmLoginDataSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLookUpTable.resx">
+      <DependentUpon>FrmLookUpTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OracleDataSource\FrmOracleTableColumnInfo.resx">
+      <DependentUpon>FrmOracleTableColumnInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableColumnInfo.resx">
+      <DependentUpon>FrmTableColumnInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableViewContainer.resx">
+      <DependentUpon>FrmTableViewContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginLog.resx">
+      <DependentUpon>LoginLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OracleDataSource\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTableView.resx">
+      <DependentUpon>ControlTableView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuilderSelect.resx">
+      <DependentUpon>FrmBuilderSelect.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComeCommonMethod\ComeCommonMethod.csproj">
+      <Project>{8819FCC6-79A2-4C41-B5B3-84E0BADF12BC}</Project>
+      <Name>ComeCommonMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Main.Interface\Main.Interface.csproj">
+      <Project>{26726B3C-A9C0-480D-8DD6-6EC61B174AAF}</Project>
+      <Name>Main.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CenterConfig.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>CenterConfig.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="OracleDataSource\OracleSetring.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>OracleSetring.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

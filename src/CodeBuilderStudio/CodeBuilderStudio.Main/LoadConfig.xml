@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<R:ComeRoot xmlns:R="http://www.emed.cc/CodeBuilderStudio">
+  <F:ComeDetails xmlns:F="http://www.emed.cc/CodeBuilderStudio/Details">
+    <Ab:About xmlns:Ab="http://www.emed.cc/CodeBuilderStudio/Details/About" Assembly="About.Come.dll" ></Ab:About>
+    <Cl:Close xmlns:Cl="http://www.emed.cc/CodeBuilderStudio/Details/Close" Assembly="Close.Come.dll"></Cl:Close>
+    <Com:ComplexBuilder xmlns:Com="http://www.emed.cc/CodeBuilderStudio/Details/ComplexBuilder" Assembly="ComplexBuilder.Come.dll"></Com:ComplexBuilder>
+    <Data:DataSourceOpen xmlns:Data="http://www.emed.cc/CodeBuilderStudio/Details/DataSourceOpen" Assembly="DataSourceOpen.Come.dll" ></Data:DataSourceOpen>
+    <Ex:Exit xmlns:Ex="http://www.emed.cc/CodeBuilderStudio/Details/Exit" Assembly="Exit.Come.dll"></Ex:Exit>
+    <He:Helper xmlns:He="http://www.emed.cc/CodeBuilderStudio/Details/Helper" Assembly="Helper.Come.dll"></He:Helper>
+    <Ne:NewProject xmlns:Ne="http://www.emed.cc/CodeBuilderStudio/Details/NewProject" Assembly="NewProject.Come.dll"></Ne:NewProject>
+    <Oe:OpenProject xmlns:Oe="http://www.emed.cc/CodeBuilderStudio/Details/OpenProject" Assembly="OpenProject.Come.dll"></Oe:OpenProject>
+    <Ou:OuterTool xmlns:Ou="http://www.emed.cc/CodeBuilderStudio/Details/OuterTool" Assembly="OuterTool.Come.dll"></Ou:OuterTool>
+    <Pl:Plug xmlns:Pl="http://www.emed.cc/CodeBuilderStudio/Details/Plug" Assembly="Plug.Come.dll"></Pl:Plug>
+    <Sing:SingleBuilder xmlns:Sing="http://www.emed.cc/CodeBuilderStudio/Details/SingleBuilder" Assembly="SingleBuilder.Come.dll"></Sing:SingleBuilder>
+  </F:ComeDetails>
+</R:ComeRoot>
