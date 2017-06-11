@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CodeBuilderStudio.Main</RootNamespace>
-    <AssemblyName>FastExpress.net</AssemblyName>
+    <AssemblyName>CodeBuilderStudio.Main</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ApplicationIcon>app.ico</ApplicationIcon>
